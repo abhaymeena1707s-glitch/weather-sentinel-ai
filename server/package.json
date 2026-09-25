@@ -1,0 +1,23 @@
+{
+  "name": "weather-sentinel-server",
+  "version": "1.0.0",
+  "description": "Backend API, Anomaly Engine, Socket.IO & Ingestion server for Weather Sentinel AI",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node seed/seedDatabase.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "morgan": "^1.10.0",
+    "socket.io": "^4.8.1",
+    "uuid": "^11.0.5"
+  }
+}

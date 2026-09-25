@@ -1,0 +1,44 @@
+[
+  {
+    "stationId": "AWS-042",
+    "timestamp": "2026-09-25T10:24:00Z",
+    "temperature": 55.0,
+    "pressure": 987.2,
+    "humidity": 96.0,
+    "expectedTemperature": 31.8,
+    "expectedPressure": 1003.2,
+    "expectedHumidity": 64.5,
+    "anomalyScore": 94,
+    "severity": "HIGH",
+    "rootCause": "Probable Temperature Sensor Fault",
+    "status": "QUARANTINED"
+  },
+  {
+    "stationId": "AWS-017",
+    "timestamp": "2026-09-25T08:17:00Z",
+    "temperature": 33.4,
+    "pressure": 1003.1,
+    "humidity": 88.0,
+    "expectedTemperature": 32.0,
+    "expectedPressure": 1003.5,
+    "expectedHumidity": 68.0,
+    "anomalyScore": 62,
+    "severity": "MEDIUM",
+    "rootCause": "Humidity Drift",
+    "status": "ACTIVE"
+  },
+  {
+    "stationId": "AWS-009",
+    "timestamp": "2026-09-25T06:42:00Z",
+    "temperature": null,
+    "pressure": 1004.5,
+    "humidity": null,
+    "expectedTemperature": 24.5,
+    "expectedPressure": 1004.0,
+    "expectedHumidity": 82.0,
+    "anomalyScore": 88,
+    "severity": "HIGH",
+    "rootCause": "Communication Gap",
+    "status": "ACTIVE"
+  }
+]

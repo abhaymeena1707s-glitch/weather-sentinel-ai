@@ -1,0 +1,31 @@
+{
+  "name": "weather-sentinel-ai",
+  "version": "1.0.0",
+  "description": "Adaptive, Explainable & Self-Healing Quality-Control Platform for Automatic Weather Stations (AWS)",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "node server/server.js",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "node server/tests/test_anomaly_engine.js && node server/tests/test_api.js"
+  },
+  "keywords": [
+    "weather",
+    "aws",
+    "anomaly-detection",
+    "quality-control",
+    "meteorology",
+    "sensor-digital-twin",
+    "counterfactual-ai"
+  ],
+  "author": "Weather Sentinel AI Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  }
+}
